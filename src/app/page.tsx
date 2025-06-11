@@ -76,7 +76,7 @@ export default function Home() {
   const handleEnvelopeClick = () => {
     if (!isEnvelopeOpen) {
       setIsEnvelopeOpen(true)
-      handlePlay()
+      // handlePlay()
     }
   }
 
@@ -133,19 +133,22 @@ export default function Home() {
 
 </motion.li>
 
-              <div className="relative w-full max-w-lg mx-auto" onClick={handleEnvelopeClick}>
-                <Envelope isOpen={isEnvelopeOpen} onClick={handleEnvelopeClick}>
-                  <LoveLetter isOpen={isEnvelopeOpen} />
+              <div className="relative w-full max-w-lg mx-auto" >
+                <Envelope isOpen={isEnvelopeOpen} >
+                  <LoveLetter isOpen={isEnvelopeOpen} onClick={() => setIsEnvelopeOpen(false)}/>
                 </Envelope>
 
                 {!isEnvelopeOpen && (
+                  <div onClick={() => setIsEnvelopeOpen(true)}>
                   <motion.div
-                    className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-80 px-4 py-2 rounded-full text-red-600 font-medium shadow-md cursor-pointer z-30"
+                    className="absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-80 px-4 py-2 rounded-full text-red-600 font-medium shadow-md cursor-pointer z-30"
                     animate={{ scale: [1, 1.05, 1] }}
                     transition={{ repeat: Number.POSITIVE_INFINITY, duration: 1.5 }}
+                    
                   >
                     Clique para abrir
                   </motion.div>
+                  </div>
                 )}
               </div>
             </motion.div>

@@ -32,9 +32,9 @@ export default function Envelope({ isOpen, children, onClick }: EnvelopeProps) {
           style={{ transformStyle: "preserve-3d", zIndex: 20 }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-red-500 to-red-400" />
-        </motion.div> */}
+        </motion.div>
 
-        {/* <motion.div
+        <motion.div
           className="absolute top-0 right-0 w-1/2 h-full origin-left bg-red-400"
           initial={{ rotateY: 0 }}
           animate={{ rotateY: isOpen ? 30 : 0 }}
