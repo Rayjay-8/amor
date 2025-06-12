@@ -124,14 +124,14 @@ export default function Home() {
               </h2>
 
 
-              <motion.li
-  initial={{ opacity: 0  }}
-  animate={{ opacity: 1 }}
-  transition={{ ease: "easeOut", duration: 5 }}
->
-  <h1 className="text-5xl md:text-6xl font-bold text-red-600 mb-8 text-center">Manu</h1>
+              <motion.div
+                initial={{ opacity: 0  }}
+                animate={{ opacity: 1 }}
+                transition={{ ease: "easeOut", duration: 5 }}
+              >
+                <h1 className="text-5xl md:text-6xl font-bold text-red-600 mb-8 text-center">Manu</h1>
 
-</motion.li>
+                </motion.div>
 
               <div className="relative w-full max-w-lg mx-auto" >
                 <Envelope isOpen={isEnvelopeOpen} >
