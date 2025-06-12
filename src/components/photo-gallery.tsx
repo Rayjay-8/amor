@@ -8,38 +8,39 @@ import { div } from "framer-motion/client"
 
 // Dados de exemplo para as fotos
 const photos = [
-  { id: 1, src: `s1.jpeg`, title: "Shopping", date: "06/10/2025" },
-  { id: 2, src: `s2.jpeg`, title: "Shopping", date: "06/10/2025" },
-  { id: 3, src: `s3.jpeg`, title: "Shopping", date: "06/10/2025" },
-  { id: 4, src: `s4.jpeg`, title: "Shopping", date: "06/10/2025" },
-  { id: 5, src: `s5.jpeg`, title: "Shopping", date: "06/10/2025" },
-  { id: 6, src: `s6.jpeg`, title: "Shopping", date: "06/10/2025" },
-  { id: 7, src: `s7.jpeg`, title: "Shopping", date: "06/10/2025" },
-  { id: 8, src: `s8.jpeg`, title: "Shopping", date: "06/10/2025" },
-  { id: 9, src: `s9.jpeg`, title: "Shopping", date: "06/10/2025" },
-  { id: 10, src: `s10.jpeg`, title: "Shopping", date: "06/10/2025" },
-  { id: 11, src: `s11.jpeg`, title: "Shopping", date: "06/10/2025" },
-  { id: 12, src: `s12.jpeg`, title: "Shopping", date: "06/10/2025" },
-  { id: 13, src: `s13.jpeg`, title: "Shopping", date: "06/10/2025" },
-  { id: 14, src: `s14.jpeg`, title: "Shopping", date: "06/10/2025" },
-  { id: 15, src: `s15.jpeg`, title: "Shopping", date: "06/10/2025" },
-  { id: 16, src: `s16.jpeg`, title: "Shopping", date: "06/10/2025" },
-  { id: 17, src: `s17.jpeg`, title: "Shopping", date: "06/10/2025" },
-  { id: 18, src: `s18.jpeg`, title: "Shopping", date: "06/10/2025" },
-  { id: 19, src: `s19.jpeg`, title: "Shopping", date: "06/10/2025" },
-  { id: 20, src: `s20.jpeg`, title: "Shopping", date: "06/10/2025" },
-  { id: 21, src: `s21.jpeg`, title: "Shopping", date: "06/10/2025" },
-  { id: 22, src: `s22.jpeg`, title: "Shopping", date: "06/10/2025" },
-  { id: 23, src: `s23.jpeg`, title: "Shopping", date: "06/10/2025" },
-  { id: 24, src: `s24.jpeg`, title: "Shopping", date: "06/10/2025" },
-  { id: 25, src: `s25.jpeg`, title: "Shopping", date: "06/10/2025" },
-  { id: 26, src: `s26.jpeg`, title: "Shopping", date: "06/10/2025" },
+  { id: 1, src: `s1.jpeg`, title: "Hum : )", date: "06/10/2025" },
+  { id: 27, src: `s27.jpeg`, title: "Loja da Alice", date: "17/04/2025" },
+  { id: 2, src: `s2.jpeg`, title: "No Shopping", date: "06/10/2025" },
+  { id: 3, src: `s3.jpeg`, title: "Roda gigante s2", date: "12/05/2025" },
+  { id: 4, src: `s4.jpeg`, title: "Roda gigante Medo?", date: "12/05/2025" },
+  { id: 5, src: `s5.jpeg`, title: "Expoingá S2", date: "12/05/2025" },
+  { id: 6, src: `s6.jpeg`, title: "Linda", date: "17/04/2025" },
+  { id: 7, src: `s7.jpeg`, title: "Gata", date: "17/04/2025" },
+  { id: 8, src: `s8.jpeg`, title: "Docinho", date: "17/04/2025" },
+  { id: 9, src: `s9.jpeg`, title: "Amo de mais", date: "17/04/2025" },
+  { id: 10, src: `s10.jpeg`, title: "Fazendo nossa comida", date: "06/03/2025" },
+  { id: 11, src: `s11.jpeg`, title: "Melhor dia", date: "22/02/2025" },
+  { id: 12, src: `s12.jpeg`, title: "Noite com minha vida", date: "22/02/2025" },
+  { id: 13, src: `s13.jpeg`, title: "meu amor gente", date: "22/02/2025" },
+  { id: 14, src: `s14.jpeg`, title: "hahahhaha", date: "22/02/2025" },
+  { id: 15, src: `s15.jpeg`, title: "Delicia...", date: "15/12/2024" },
+  { id: 16, src: `s16.jpeg`, title: "Formatura do meu amor", date: "10/12/2024" },
+  { id: 17, src: `s17.jpeg`, title: "Formatura da minha vida", date: "10/12/2024" },
+  { id: 18, src: `s18.jpeg`, title: "Dia no parque", date: "25/11/2024" },
+  { id: 19, src: `s19.jpeg`, title: "Ela", date: "06/11/2024" },
+  { id: 20, src: `s20.jpeg`, title: "Eu", date: "06/11/2024" },
+  { id: 21, src: `s21.jpeg`, title: "Melhor impossivel", date: "05/11/2024" },
+  { id: 22, src: `s22.jpeg`, title: "Amo esse rostinho", date: "05/11/2024" },
+  { id: 23, src: `s23.jpeg`, title: "hahaha", date: "05/11/2024" },
+  { id: 24, src: `s24.jpeg`, title: "q vergonha gente", date: "05/11/2024" },
+  { id: 25, src: `s25.jpeg`, title: "Almoço com a sogra", date: "27/10/2024" },
+  { id: 26, src: `s26.jpeg`, title: "Primeira vez na casa dela", date: "27/10/2024" },
 ]
 
 const videos = [
-  { id: 100, src: `v1.mp4`, title: "Shopping", date: "06/10/2025" },
-  { id: 200, src: `v2.mp4`, title: "Shopping", date: "06/10/2025" },
-  { id: 300, src: `v3.mp4`, title: "Shopping", date: "06/10/2025" },
+  { id: 100, src: `v1.mp4`, title: "Mêsversário", date: "16/05/2025" },
+  { id: 200, src: `v2.mp4`, title: "Tempinho Juntos", date: "06/10/2025" },
+  { id: 300, src: `v3.mp4`, title: "Parque", date: "25/11/2024" },
 ]
 
 export default function PhotoGallery() {
@@ -74,6 +75,7 @@ export default function PhotoGallery() {
             />
           </div>
           <div className="p-1 text-center">
+            <p className="text-xs md:text-sm text-gray-500">{video.title}</p>
             <p className="text-xs md:text-sm text-gray-500">{video.date}</p>
           </div>
         </div>
@@ -102,6 +104,7 @@ export default function PhotoGallery() {
               />
             </div>
             <div className="p-1 text-center">
+              <p className="text-xs md:text-sm text-gray-500">{photo.title}</p>
               <p className="text-xs md:text-sm text-gray-500">{photo.date}</p>
             </div>
           </div>
@@ -158,7 +161,7 @@ export default function PhotoGallery() {
               <X size={24} />
             </button>
 
-            <div className="aspect-video bg-gray-100 mb-4">
+            <div className="aspect-square bg-gray-100 mb-4">
               <img
                 src={`/nos/${selectedPhotosrc}`}
                 alt={photos.find((p) => p.id === selectedPhoto)?.title}

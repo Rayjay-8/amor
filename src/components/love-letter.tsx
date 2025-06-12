@@ -1,6 +1,19 @@
 "use client"
 
+
 import { motion } from "framer-motion"
+import localFont from 'next/font/local'
+
+const minhaFonte = localFont({
+  src: '../../public/fonts/b.ttf',
+  display: 'swap'
+})
+
+const minhaFonteassinatura = localFont({
+  src: '../../public/fonts/a.ttf',
+  display: 'swap'
+})
+
 
 interface LoveLetterProps {
   isOpen: boolean,
@@ -10,14 +23,14 @@ interface LoveLetterProps {
 export default function LoveLetter({ isOpen, onClick }: LoveLetterProps) {
   return (
     <motion.div animate={isOpen ? { opacity: 1, y: 0, scale: 1, pointerEvents: `all`} : { opacity: 0, y: 0, scale: 1, pointerEvents:"none"}}
-    className="fixed inset-0 z-50 bg-red-100" onClick={() => onClick()}>
+    className="fixed inset-0 z-50 bg-red-100 " onClick={() => onClick()}>
     <motion.div
       className="fixed inset-7 z-50 bg-white rounded-lg shadow-xl p-6 md:p-8 border-2 border-red-100 max-h-[80vh] overflow-auto"
       initial={{ opacity: 0, y: 0, scale: 1 }}
       animate={isOpen ? { opacity: 1, y: 0, scale: 1} : { opacity: 0, y: 0, scale: 1}}
       transition={{ duration: 1, delay: 0.2 }}
     >
-      <div className="prose prose-sm md:prose-lg max-w-none text-black">
+      <div className={"prose prose-sm md:prose-lg max-w-none text-black text-4xl "+minhaFonte.className}>
         <h2 className="text-2xl md:text-3xl font-bold text-center text-red-600 mb-4 md:mb-6">Meu Amor</h2>
 
         <p className="mb-3 md:mb-4">
@@ -54,9 +67,10 @@ export default function LoveLetter({ isOpen, onClick }: LoveLetterProps) {
         </p>
 
         <p className="text-right font-bold">
-          Com todo meu amor
+          De: <span className={"text-red-500 "+minhaFonteassinatura.className}>  Ray</span>
           <br />
-          Ray
+            Para: 
+          <span className="text-red-500">  Emanuely</span>
         </p>
       </div>
     </motion.div>

@@ -116,7 +116,7 @@ export default function MusicPlayer({ songs }: MusicPlayerProps) {
 
   return (
     <motion.div
-      className="fixed bottom-4 right-4 z-40"
+      className="fixed bottom-16 right-4 z-40"
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ delay: 1 }}
